@@ -1,0 +1,847 @@
+2013-05-23 12:43:30 Error: Fatal Error (1): Call to a member function find() on a non-object in [/Users/gregpod/Sites/wayfor/app/Controller/UsersController.php, line 49]
+2013-05-23 12:43:30 Error: [FatalErrorException] Call to a member function find() on a non-object
+Request URL: /wayfor/users/register
+Stack Trace:
+#0 /Users/gregpod/Sites/wayfor/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Users/gregpod/...', 49)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Users/gregpod/...', 49, Array)
+#2 /Users/gregpod/Sites/wayfor/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Users/gregpod/...', 49, Array)
+#3 /Users/gregpod/Sites/wayfor/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-05-23 12:44:25 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'getActivationHash' at line 1
+Request URL: /wayfor/users/register
+Stack Trace:
+#0 /Users/gregpod/Sites/wayfor/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /Users/gregpod/Sites/wayfor/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('getActivationHa...', Array)
+#2 /Users/gregpod/Sites/wayfor/lib/Cake/Model/Datasource/DboSource.php(670): DboSource->execute('getActivationHa...', Array, Array)
+#3 /Users/gregpod/Sites/wayfor/lib/Cake/Model/Datasource/DboSource.php(612): DboSource->fetchAll('getActivationHa...', Array, Array)
+#4 /Users/gregpod/Sites/wayfor/lib/Cake/Model/Model.php(800): DboSource->query('getActivationHa...', Array, Object(User))
+#5 /Users/gregpod/Sites/wayfor/app/Controller/UsersController.php(28): Model->__call('getActivationHa...', Array)
+#6 /Users/gregpod/Sites/wayfor/app/Controller/UsersController.php(28): User->getActivationHash()
+#7 [internal function]: UsersController->register()
+#8 /Users/gregpod/Sites/wayfor/lib/Cake/Controller/Controller.php(486): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#9 /Users/gregpod/Sites/wayfor/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#10 /Users/gregpod/Sites/wayfor/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#11 /Users/gregpod/Sites/wayfor/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2013-05-23 12:45:58 Error: [ConfigureException] /Users/gregpod/Sites/wayfor/app/Config/email.php not found.
+Request URL: /wayfor/users/register
+Stack Trace:
+#0 /Users/gregpod/Sites/wayfor/lib/Cake/Network/Email/CakeEmail.php(1039): CakeEmail->_applyConfig('gmail')
+#1 /Users/gregpod/Sites/wayfor/lib/Cake/Network/Email/CakeEmail.php(336): CakeEmail->config('gmail')
+#2 /Users/gregpod/Sites/wayfor/app/Controller/UsersController.php(31): CakeEmail->__construct('gmail')
+#3 [internal function]: UsersController->register()
+#4 /Users/gregpod/Sites/wayfor/lib/Cake/Controller/Controller.php(486): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#5 /Users/gregpod/Sites/wayfor/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#6 /Users/gregpod/Sites/wayfor/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#7 /Users/gregpod/Sites/wayfor/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2013-05-23 13:05:40 Error: Fatal Error (4): syntax error, unexpected 'the' (T_STRING) in [/Users/gregpod/Sites/wayfor/app/Controller/UsersController.php, line 85]
+2013-05-23 13:05:40 Error: [FatalErrorException] syntax error, unexpected 'the' (T_STRING)
+Request URL: /wayfor/users/activate/1/fb0c05e4
+Stack Trace:
+#0 /Users/gregpod/Sites/wayfor/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Users/gregpod/...', 85)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Users/gregpod/...', 85, Array)
+#2 /Users/gregpod/Sites/wayfor/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Users/gregpod/...', 85, Array)
+#3 /Users/gregpod/Sites/wayfor/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-05-23 14:01:25 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /wayfor/img/facebook.png
+Stack Trace:
+#0 /Users/gregpod/Sites/wayfor/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-05-23 14:01:28 Error: [MissingActionException] Action FacebookCpsController::facebook_cps() could not be found.
+Exception Attributes: array (
+  'controller' => 'FacebookCpsController',
+  'action' => 'facebook_cps',
+)
+Request URL: /wayfor/FacebookCps/facebook_cps/login
+Stack Trace:
+#0 /Users/gregpod/Sites/wayfor/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /Users/gregpod/Sites/wayfor/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(FacebookCpsController), Object(CakeRequest), Object(CakeResponse))
+#2 /Users/gregpod/Sites/wayfor/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-05-23 14:01:44 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /wayfor/img/facebook.png
+Stack Trace:
+#0 /Users/gregpod/Sites/wayfor/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-05-23 15:38:10 Error: [MissingControllerException] Controller class UserProfilesController could not be found.
+Exception Attributes: array (
+  'class' => 'UserProfilesController',
+  'plugin' => NULL,
+)
+Request URL: /wayfor/user_profiles
+Stack Trace:
+#0 /Users/gregpod/Sites/wayfor/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-05-23 15:38:17 Error: [MissingControllerException] Controller class DistrictsController could not be found.
+Exception Attributes: array (
+  'class' => 'DistrictsController',
+  'plugin' => NULL,
+)
+Request URL: /wayfor/districts
+Stack Trace:
+#0 /Users/gregpod/Sites/wayfor/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-05-23 15:46:09 Error: Fatal Error (1): Call to a member function create() on a non-object in [/Users/gregpod/Sites/wayfor/app/Controller/UsersController.php, line 142]
+2013-05-23 15:46:09 Error: [FatalErrorException] Call to a member function create() on a non-object
+Request URL: /wayfor/users/activate/1/fb0c05e4
+Stack Trace:
+#0 /Users/gregpod/Sites/wayfor/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Users/gregpod/...', 142)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Users/gregpod/...', 142, Array)
+#2 /Users/gregpod/Sites/wayfor/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Users/gregpod/...', 142, Array)
+#3 /Users/gregpod/Sites/wayfor/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-05-23 15:49:01 Error: [MissingViewException] View file "/Users/gregpod/Sites/wayfor/app/View/Users/activate.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/Users/gregpod/Sites/wayfor/app/View/Users/activate.ctp',
+)
+Request URL: /wayfor/users/activate/1/fb0c05e4
+Stack Trace:
+#0 /Users/gregpod/Sites/wayfor/lib/Cake/View/View.php(468): View->_getViewFileName(NULL)
+#1 /Users/gregpod/Sites/wayfor/lib/Cake/Controller/Controller.php(948): View->render(NULL, NULL)
+#2 /Users/gregpod/Sites/wayfor/lib/Cake/Routing/Dispatcher.php(194): Controller->render()
+#3 /Users/gregpod/Sites/wayfor/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 /Users/gregpod/Sites/wayfor/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-05-23 16:03:33 Error: Fatal Error (4): syntax error, unexpected '[' in [/Users/gregpod/Sites/wayfor/app/View/Elements/login_menu.ctp, line 5]
+2013-05-23 16:03:33 Error: [FatalErrorException] syntax error, unexpected '['
+Request URL: /wayfor/profiles/
+Stack Trace:
+#0 /Users/gregpod/Sites/wayfor/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Users/gregpod/...', 5)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Users/gregpod/...', 5, Array)
+#2 /Users/gregpod/Sites/wayfor/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Users/gregpod/...', 5, Array)
+#3 /Users/gregpod/Sites/wayfor/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-05-23 16:06:07 Error: Fatal Error (1): Cannot use object of type SessionHelper as array in [/Users/gregpod/Sites/wayfor/app/View/Elements/login_menu.ctp, line 5]
+2013-05-23 16:06:07 Error: [FatalErrorException] Cannot use object of type SessionHelper as array
+Request URL: /wayfor/profiles/
+Stack Trace:
+#0 /Users/gregpod/Sites/wayfor/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Cannot use obje...', '/Users/gregpod/...', 5)
+#1 [internal function]: ErrorHandler::handleError(1, 'Cannot use obje...', '/Users/gregpod/...', 5, Array)
+#2 /Users/gregpod/Sites/wayfor/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Cannot use obje...', '/Users/gregpod/...', 5, Array)
+#3 /Users/gregpod/Sites/wayfor/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-05-23 16:16:42 Error: [MissingControllerException] Controller class LogoutController could not be found.
+Exception Attributes: array (
+  'class' => 'LogoutController',
+  'plugin' => NULL,
+)
+Request URL: /wayfor/logout
+Stack Trace:
+#0 /Users/gregpod/Sites/wayfor/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-05-23 16:17:04 Error: [MissingControllerException] Controller class LogoutController could not be found.
+Exception Attributes: array (
+  'class' => 'LogoutController',
+  'plugin' => NULL,
+)
+Request URL: /wayfor/logout
+Stack Trace:
+#0 /Users/gregpod/Sites/wayfor/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-05-23 16:22:10 Error: Fatal Error (1): Call to undefined method View::Session() in [/Users/gregpod/Sites/wayfor/app/View/Elements/login_menu.ctp, line 5]
+2013-05-23 16:22:10 Error: [FatalErrorException] Call to undefined method View::Session()
+Request URL: /wayfor/users
+Stack Trace:
+#0 /Users/gregpod/Sites/wayfor/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/Users/gregpod/...', 5)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/Users/gregpod/...', 5, Array)
+#2 /Users/gregpod/Sites/wayfor/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/Users/gregpod/...', 5, Array)
+#3 /Users/gregpod/Sites/wayfor/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-05-29 13:50:33 Error: [MissingControllerException] Controller class DistrictController could not be found.
+Exception Attributes: array (
+  'class' => 'DistrictController',
+  'plugin' => NULL,
+)
+Request URL: /wayfor/district/find
+Stack Trace:
+#0 /Users/gregpod/Sites/wayfor/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-05-29 14:11:20 Error: [MissingControllerException] Controller class DistrictController could not be found.
+Exception Attributes: array (
+  'class' => 'DistrictController',
+  'plugin' => NULL,
+)
+Request URL: /wayfor/district/find
+Stack Trace:
+#0 /Users/gregpod/Sites/wayfor/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-05-29 14:12:40 Error: [MissingControllerException] Controller class DistrictController could not be found.
+Exception Attributes: array (
+  'class' => 'DistrictController',
+  'plugin' => NULL,
+)
+Request URL: /wayfor/district/find
+Stack Trace:
+#0 /Users/gregpod/Sites/wayfor/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-05-29 14:13:05 Error: [MissingControllerException] Controller class DistrictController could not be found.
+Exception Attributes: array (
+  'class' => 'DistrictController',
+  'plugin' => NULL,
+)
+Request URL: /wayfor/district/find
+Stack Trace:
+#0 /Users/gregpod/Sites/wayfor/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-05-29 14:18:30 Error: [MissingControllerException] Controller class DistrictController could not be found.
+Exception Attributes: array (
+  'class' => 'DistrictController',
+  'plugin' => NULL,
+)
+Request URL: /wayfor/district/find
+Stack Trace:
+#0 /Users/gregpod/Sites/wayfor/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-05-29 14:19:18 Error: [MissingControllerException] Controller class DistrictController could not be found.
+Exception Attributes: array (
+  'class' => 'DistrictController',
+  'plugin' => NULL,
+)
+Request URL: /wayfor/district/find
+Stack Trace:
+#0 /Users/gregpod/Sites/wayfor/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-05-29 14:25:51 Error: [MissingControllerException] Controller class DistrictController could not be found.
+Exception Attributes: array (
+  'class' => 'DistrictController',
+  'plugin' => NULL,
+)
+Request URL: /wayfor/district/find
+Stack Trace:
+#0 /Users/gregpod/Sites/wayfor/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-05-29 14:27:23 Error: [MissingControllerException] Controller class DistrictController could not be found.
+Exception Attributes: array (
+  'class' => 'DistrictController',
+  'plugin' => NULL,
+)
+Request URL: /wayfor/district/find
+Stack Trace:
+#0 /Users/gregpod/Sites/wayfor/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-05-29 14:28:00 Error: [MissingControllerException] Controller class DistrictController could not be found.
+Exception Attributes: array (
+  'class' => 'DistrictController',
+  'plugin' => NULL,
+)
+Request URL: /wayfor/district/find
+Stack Trace:
+#0 /Users/gregpod/Sites/wayfor/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-05-29 14:28:26 Error: [MissingControllerException] Controller class DistrictController could not be found.
+Exception Attributes: array (
+  'class' => 'DistrictController',
+  'plugin' => NULL,
+)
+Request URL: /wayfor/district/find
+Stack Trace:
+#0 /Users/gregpod/Sites/wayfor/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-05-29 14:28:42 Error: [MissingControllerException] Controller class DistrictController could not be found.
+Exception Attributes: array (
+  'class' => 'DistrictController',
+  'plugin' => NULL,
+)
+Request URL: /wayfor/district/find
+Stack Trace:
+#0 /Users/gregpod/Sites/wayfor/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-05-29 14:28:42 Error: Fatal Error (4): syntax error, unexpected ',' in [/Users/gregpod/Sites/wayfor/app/View/Elements/login_menu.ctp, line 18]
+2013-05-29 14:28:42 Error: [FatalErrorException] syntax error, unexpected ','
+Request URL: /wayfor/district/find
+Stack Trace:
+#0 /Users/gregpod/Sites/wayfor/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Users/gregpod/...', 18)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Users/gregpod/...', 18, Array)
+#2 /Users/gregpod/Sites/wayfor/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Users/gregpod/...', 18, Array)
+#3 /Users/gregpod/Sites/wayfor/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-05-29 14:29:01 Error: [MissingControllerException] Controller class DistrictController could not be found.
+Exception Attributes: array (
+  'class' => 'DistrictController',
+  'plugin' => NULL,
+)
+Request URL: /wayfor/district/find
+Stack Trace:
+#0 /Users/gregpod/Sites/wayfor/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-05-29 14:35:11 Error: [MissingControllerException] Controller class DistrictController could not be found.
+Exception Attributes: array (
+  'class' => 'DistrictController',
+  'plugin' => NULL,
+)
+Request URL: /wayfor/district/find
+Stack Trace:
+#0 /Users/gregpod/Sites/wayfor/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-05-29 14:35:41 Error: [MissingControllerException] Controller class DistrictController could not be found.
+Exception Attributes: array (
+  'class' => 'DistrictController',
+  'plugin' => NULL,
+)
+Request URL: /wayfor/district/find
+Stack Trace:
+#0 /Users/gregpod/Sites/wayfor/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-05-29 14:36:35 Error: [MissingControllerException] Controller class DistrictController could not be found.
+Exception Attributes: array (
+  'class' => 'DistrictController',
+  'plugin' => NULL,
+)
+Request URL: /wayfor/district/find
+Stack Trace:
+#0 /Users/gregpod/Sites/wayfor/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-05-29 14:36:46 Error: [MissingControllerException] Controller class DistrictController could not be found.
+Exception Attributes: array (
+  'class' => 'DistrictController',
+  'plugin' => NULL,
+)
+Request URL: /wayfor/district/find
+Stack Trace:
+#0 /Users/gregpod/Sites/wayfor/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-05-29 14:36:57 Error: [MissingControllerException] Controller class DistrictController could not be found.
+Exception Attributes: array (
+  'class' => 'DistrictController',
+  'plugin' => NULL,
+)
+Request URL: /wayfor/district/find
+Stack Trace:
+#0 /Users/gregpod/Sites/wayfor/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-05-29 14:38:19 Error: [MissingControllerException] Controller class DistrictController could not be found.
+Exception Attributes: array (
+  'class' => 'DistrictController',
+  'plugin' => NULL,
+)
+Request URL: /wayfor/district/find
+Stack Trace:
+#0 /Users/gregpod/Sites/wayfor/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-05-29 14:39:10 Error: [MissingControllerException] Controller class DistrictController could not be found.
+Exception Attributes: array (
+  'class' => 'DistrictController',
+  'plugin' => NULL,
+)
+Request URL: /wayfor/district/find
+Stack Trace:
+#0 /Users/gregpod/Sites/wayfor/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-05-29 14:40:40 Error: [MissingControllerException] Controller class DistrictController could not be found.
+Exception Attributes: array (
+  'class' => 'DistrictController',
+  'plugin' => NULL,
+)
+Request URL: /wayfor/district/find
+Stack Trace:
+#0 /Users/gregpod/Sites/wayfor/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-05-29 14:41:56 Error: [MissingControllerException] Controller class DistrictController could not be found.
+Exception Attributes: array (
+  'class' => 'DistrictController',
+  'plugin' => NULL,
+)
+Request URL: /wayfor/district/find
+Stack Trace:
+#0 /Users/gregpod/Sites/wayfor/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-05-29 14:42:40 Error: [MissingControllerException] Controller class DistrictController could not be found.
+Exception Attributes: array (
+  'class' => 'DistrictController',
+  'plugin' => NULL,
+)
+Request URL: /wayfor/district/find
+Stack Trace:
+#0 /Users/gregpod/Sites/wayfor/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-05-29 14:42:40 Error: Fatal Error (1): Call to a member function read() on a non-object in [/Users/gregpod/Sites/wayfor/app/View/Elements/login_menu.ctp, line 8]
+2013-05-29 14:42:40 Error: [FatalErrorException] Call to a member function read() on a non-object
+Request URL: /wayfor/district/find
+Stack Trace:
+#0 /Users/gregpod/Sites/wayfor/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Users/gregpod/...', 8)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Users/gregpod/...', 8, Array)
+#2 /Users/gregpod/Sites/wayfor/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Users/gregpod/...', 8, Array)
+#3 /Users/gregpod/Sites/wayfor/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-05-29 14:43:17 Error: [MissingControllerException] Controller class DistrictController could not be found.
+Exception Attributes: array (
+  'class' => 'DistrictController',
+  'plugin' => NULL,
+)
+Request URL: /wayfor/district/find
+Stack Trace:
+#0 /Users/gregpod/Sites/wayfor/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-05-29 14:43:17 Error: Fatal Error (4): syntax error, unexpected '(', expecting identifier (T_STRING) or variable (T_VARIABLE) or '{' or '$' in [/Users/gregpod/Sites/wayfor/app/View/Elements/login_menu.ctp, line 8]
+2013-05-29 14:43:17 Error: [FatalErrorException] syntax error, unexpected '(', expecting identifier (T_STRING) or variable (T_VARIABLE) or '{' or '$'
+Request URL: /wayfor/district/find
+Stack Trace:
+#0 /Users/gregpod/Sites/wayfor/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Users/gregpod/...', 8)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Users/gregpod/...', 8, Array)
+#2 /Users/gregpod/Sites/wayfor/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Users/gregpod/...', 8, Array)
+#3 /Users/gregpod/Sites/wayfor/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-05-29 14:43:33 Error: [MissingControllerException] Controller class DistrictController could not be found.
+Exception Attributes: array (
+  'class' => 'DistrictController',
+  'plugin' => NULL,
+)
+Request URL: /wayfor/district/find
+Stack Trace:
+#0 /Users/gregpod/Sites/wayfor/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-05-29 14:43:46 Error: [MissingControllerException] Controller class DistrictController could not be found.
+Exception Attributes: array (
+  'class' => 'DistrictController',
+  'plugin' => NULL,
+)
+Request URL: /wayfor/district/find
+Stack Trace:
+#0 /Users/gregpod/Sites/wayfor/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-05-29 14:44:32 Error: [MissingControllerException] Controller class DistrictController could not be found.
+Exception Attributes: array (
+  'class' => 'DistrictController',
+  'plugin' => NULL,
+)
+Request URL: /wayfor/district/find
+Stack Trace:
+#0 /Users/gregpod/Sites/wayfor/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-05-29 14:44:35 Error: [MissingControllerException] Controller class DistrictController could not be found.
+Exception Attributes: array (
+  'class' => 'DistrictController',
+  'plugin' => NULL,
+)
+Request URL: /wayfor/district/find
+Stack Trace:
+#0 /Users/gregpod/Sites/wayfor/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-05-29 14:44:56 Error: [MissingControllerException] Controller class DistrictController could not be found.
+Exception Attributes: array (
+  'class' => 'DistrictController',
+  'plugin' => NULL,
+)
+Request URL: /wayfor/district/find
+Stack Trace:
+#0 /Users/gregpod/Sites/wayfor/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-05-29 14:45:00 Error: [MissingControllerException] Controller class DistrictController could not be found.
+Exception Attributes: array (
+  'class' => 'DistrictController',
+  'plugin' => NULL,
+)
+Request URL: /wayfor/district/find
+Stack Trace:
+#0 /Users/gregpod/Sites/wayfor/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-05-29 14:46:06 Error: [MissingControllerException] Controller class DistrictController could not be found.
+Exception Attributes: array (
+  'class' => 'DistrictController',
+  'plugin' => NULL,
+)
+Request URL: /wayfor/district/find
+Stack Trace:
+#0 /Users/gregpod/Sites/wayfor/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-05-29 14:46:53 Error: [MissingControllerException] Controller class DistrictController could not be found.
+Exception Attributes: array (
+  'class' => 'DistrictController',
+  'plugin' => NULL,
+)
+Request URL: /wayfor/district/find
+Stack Trace:
+#0 /Users/gregpod/Sites/wayfor/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-05-29 14:47:13 Error: [MissingControllerException] Controller class DistrictController could not be found.
+Exception Attributes: array (
+  'class' => 'DistrictController',
+  'plugin' => NULL,
+)
+Request URL: /wayfor/district/find
+Stack Trace:
+#0 /Users/gregpod/Sites/wayfor/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-05-29 14:47:28 Error: [MissingControllerException] Controller class DistrictController could not be found.
+Exception Attributes: array (
+  'class' => 'DistrictController',
+  'plugin' => NULL,
+)
+Request URL: /wayfor/district/find
+Stack Trace:
+#0 /Users/gregpod/Sites/wayfor/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-05-29 14:47:44 Error: [MissingControllerException] Controller class DistrictController could not be found.
+Exception Attributes: array (
+  'class' => 'DistrictController',
+  'plugin' => NULL,
+)
+Request URL: /wayfor/district/find
+Stack Trace:
+#0 /Users/gregpod/Sites/wayfor/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-05-29 14:47:49 Error: [MissingControllerException] Controller class DistrictController could not be found.
+Exception Attributes: array (
+  'class' => 'DistrictController',
+  'plugin' => NULL,
+)
+Request URL: /wayfor/district/find
+Stack Trace:
+#0 /Users/gregpod/Sites/wayfor/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-05-29 14:48:25 Error: [MissingControllerException] Controller class DistrictController could not be found.
+Exception Attributes: array (
+  'class' => 'DistrictController',
+  'plugin' => NULL,
+)
+Request URL: /wayfor/district/find
+Stack Trace:
+#0 /Users/gregpod/Sites/wayfor/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-05-29 14:48:25 Error: Fatal Error (4): syntax error, unexpected ';' in [/Users/gregpod/Sites/wayfor/app/View/Elements/login_menu.ctp, line 31]
+2013-05-29 14:48:25 Error: [FatalErrorException] syntax error, unexpected ';'
+Request URL: /wayfor/district/find
+Stack Trace:
+#0 /Users/gregpod/Sites/wayfor/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Users/gregpod/...', 31)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Users/gregpod/...', 31, Array)
+#2 /Users/gregpod/Sites/wayfor/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Users/gregpod/...', 31, Array)
+#3 /Users/gregpod/Sites/wayfor/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-05-29 14:48:38 Error: [MissingControllerException] Controller class DistrictController could not be found.
+Exception Attributes: array (
+  'class' => 'DistrictController',
+  'plugin' => NULL,
+)
+Request URL: /wayfor/district/find
+Stack Trace:
+#0 /Users/gregpod/Sites/wayfor/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-05-29 14:48:51 Error: [MissingControllerException] Controller class DistrictController could not be found.
+Exception Attributes: array (
+  'class' => 'DistrictController',
+  'plugin' => NULL,
+)
+Request URL: /wayfor/district/find
+Stack Trace:
+#0 /Users/gregpod/Sites/wayfor/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-05-29 14:49:02 Error: [MissingControllerException] Controller class DistrictController could not be found.
+Exception Attributes: array (
+  'class' => 'DistrictController',
+  'plugin' => NULL,
+)
+Request URL: /wayfor/district/find
+Stack Trace:
+#0 /Users/gregpod/Sites/wayfor/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-05-29 14:49:21 Error: [MissingControllerException] Controller class DistrictController could not be found.
+Exception Attributes: array (
+  'class' => 'DistrictController',
+  'plugin' => NULL,
+)
+Request URL: /wayfor/district/find
+Stack Trace:
+#0 /Users/gregpod/Sites/wayfor/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-05-29 14:51:25 Error: [MissingControllerException] Controller class DistrictController could not be found.
+Exception Attributes: array (
+  'class' => 'DistrictController',
+  'plugin' => NULL,
+)
+Request URL: /wayfor/district/find
+Stack Trace:
+#0 /Users/gregpod/Sites/wayfor/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-05-29 15:06:20 Error: [MissingControllerException] Controller class DistrictController could not be found.
+Exception Attributes: array (
+  'class' => 'DistrictController',
+  'plugin' => NULL,
+)
+Request URL: /wayfor/district/find
+Stack Trace:
+#0 /Users/gregpod/Sites/wayfor/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-05-29 15:06:40 Error: [MissingControllerException] Controller class DistrictController could not be found.
+Exception Attributes: array (
+  'class' => 'DistrictController',
+  'plugin' => NULL,
+)
+Request URL: /wayfor/district/find
+Stack Trace:
+#0 /Users/gregpod/Sites/wayfor/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-05-29 15:06:40 Error: Fatal Error (1): Class 'Controller' not found in [/Users/gregpod/Sites/wayfor/app/Controller/AppController.php, line 34]
+2013-05-29 15:06:40 Error: [FatalErrorException] Class 'Controller' not found
+Request URL: /wayfor/district/find
+Stack Trace:
+#0 /Users/gregpod/Sites/wayfor/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Class 'Controll...', '/Users/gregpod/...', 34)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'Controll...', '/Users/gregpod/...', 34, Array)
+#2 /Users/gregpod/Sites/wayfor/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Class 'Controll...', '/Users/gregpod/...', 34, Array)
+#3 /Users/gregpod/Sites/wayfor/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-05-29 15:07:29 Error: [MissingControllerException] Controller class DistrictController could not be found.
+Exception Attributes: array (
+  'class' => 'DistrictController',
+  'plugin' => NULL,
+)
+Request URL: /wayfor/district/find
+Stack Trace:
+#0 /Users/gregpod/Sites/wayfor/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-05-29 15:08:04 Error: [MissingControllerException] Controller class DistrictController could not be found.
+Exception Attributes: array (
+  'class' => 'DistrictController',
+  'plugin' => NULL,
+)
+Request URL: /wayfor/district/find
+Stack Trace:
+#0 /Users/gregpod/Sites/wayfor/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-05-29 15:08:23 Error: [MissingControllerException] Controller class DistrictController could not be found.
+Exception Attributes: array (
+  'class' => 'DistrictController',
+  'plugin' => NULL,
+)
+Request URL: /wayfor/district/find
+Stack Trace:
+#0 /Users/gregpod/Sites/wayfor/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-05-29 15:09:03 Error: [MissingControllerException] Controller class DistrictController could not be found.
+Exception Attributes: array (
+  'class' => 'DistrictController',
+  'plugin' => NULL,
+)
+Request URL: /wayfor/district/find
+Stack Trace:
+#0 /Users/gregpod/Sites/wayfor/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-05-29 15:09:14 Error: [MissingControllerException] Controller class DistrictController could not be found.
+Exception Attributes: array (
+  'class' => 'DistrictController',
+  'plugin' => NULL,
+)
+Request URL: /wayfor/district/find
+Stack Trace:
+#0 /Users/gregpod/Sites/wayfor/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-05-29 15:12:14 Error: [MissingControllerException] Controller class DistrictController could not be found.
+Exception Attributes: array (
+  'class' => 'DistrictController',
+  'plugin' => NULL,
+)
+Request URL: /wayfor/district/find
+Stack Trace:
+#0 /Users/gregpod/Sites/wayfor/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-05-29 15:12:59 Error: [MissingControllerException] Controller class DistrictController could not be found.
+Exception Attributes: array (
+  'class' => 'DistrictController',
+  'plugin' => NULL,
+)
+Request URL: /wayfor/district/find
+Stack Trace:
+#0 /Users/gregpod/Sites/wayfor/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-05-29 15:13:13 Error: [MissingControllerException] Controller class DistrictController could not be found.
+Exception Attributes: array (
+  'class' => 'DistrictController',
+  'plugin' => NULL,
+)
+Request URL: /wayfor/district/find
+Stack Trace:
+#0 /Users/gregpod/Sites/wayfor/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-05-29 15:13:46 Error: Fatal Error (4): syntax error, unexpected 'if' (T_IF) in [/Users/gregpod/Sites/wayfor/app/Controller/UsersController.php, line 117]
+2013-05-29 15:13:46 Error: [FatalErrorException] syntax error, unexpected 'if' (T_IF)
+Request URL: /wayfor/users/
+Stack Trace:
+#0 /Users/gregpod/Sites/wayfor/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Users/gregpod/...', 117)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Users/gregpod/...', 117, Array)
+#2 /Users/gregpod/Sites/wayfor/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Users/gregpod/...', 117, Array)
+#3 /Users/gregpod/Sites/wayfor/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-05-29 15:19:20 Error: [MissingActionException] Action ProfilesController::new() could not be found.
+Exception Attributes: array (
+  'controller' => 'ProfilesController',
+  'action' => 'new',
+)
+Request URL: /wayfor/profiles/new
+Stack Trace:
+#0 /Users/gregpod/Sites/wayfor/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /Users/gregpod/Sites/wayfor/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(ProfilesController), Object(CakeRequest), Object(CakeResponse))
+#2 /Users/gregpod/Sites/wayfor/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-05-29 15:19:49 Error: Fatal Error (4): syntax error, unexpected 'new' (T_NEW), expecting identifier (T_STRING) in [/Users/gregpod/Sites/wayfor/app/Controller/ProfilesController.php, line 11]
+2013-05-29 15:19:49 Error: [FatalErrorException] syntax error, unexpected 'new' (T_NEW), expecting identifier (T_STRING)
+Request URL: /wayfor/profiles/new
+Stack Trace:
+#0 /Users/gregpod/Sites/wayfor/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Users/gregpod/...', 11)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Users/gregpod/...', 11, Array)
+#2 /Users/gregpod/Sites/wayfor/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Users/gregpod/...', 11, Array)
+#3 /Users/gregpod/Sites/wayfor/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-05-29 15:20:38 Error: [MissingActionException] Action ProfilesController::new() could not be found.
+Exception Attributes: array (
+  'controller' => 'ProfilesController',
+  'action' => 'new',
+)
+Request URL: /wayfor/profiles/new
+Stack Trace:
+#0 /Users/gregpod/Sites/wayfor/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /Users/gregpod/Sites/wayfor/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(ProfilesController), Object(CakeRequest), Object(CakeResponse))
+#2 /Users/gregpod/Sites/wayfor/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-05-29 15:21:19 Error: [MissingViewException] View file "/Users/gregpod/Sites/wayfor/app/View/Profiles/new_profile.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/Users/gregpod/Sites/wayfor/app/View/Profiles/new_profile.ctp',
+)
+Request URL: /wayfor/profiles/new_profile
+Stack Trace:
+#0 /Users/gregpod/Sites/wayfor/lib/Cake/View/View.php(468): View->_getViewFileName(NULL)
+#1 /Users/gregpod/Sites/wayfor/lib/Cake/Controller/Controller.php(948): View->render(NULL, NULL)
+#2 /Users/gregpod/Sites/wayfor/lib/Cake/Routing/Dispatcher.php(194): Controller->render()
+#3 /Users/gregpod/Sites/wayfor/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(ProfilesController), Object(CakeRequest), Object(CakeResponse))
+#4 /Users/gregpod/Sites/wayfor/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-05-29 15:21:49 Error: [MissingViewException] View file "/Users/gregpod/Sites/wayfor/app/View/Profiles/new_profile.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/Users/gregpod/Sites/wayfor/app/View/Profiles/new_profile.ctp',
+)
+Request URL: /wayfor/profiles/new_profile
+Stack Trace:
+#0 /Users/gregpod/Sites/wayfor/lib/Cake/View/View.php(468): View->_getViewFileName(NULL)
+#1 /Users/gregpod/Sites/wayfor/lib/Cake/Controller/Controller.php(948): View->render(NULL, NULL)
+#2 /Users/gregpod/Sites/wayfor/lib/Cake/Routing/Dispatcher.php(194): Controller->render()
+#3 /Users/gregpod/Sites/wayfor/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(ProfilesController), Object(CakeRequest), Object(CakeResponse))
+#4 /Users/gregpod/Sites/wayfor/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-05-29 15:22:23 Error: [MissingViewException] View file "/Users/gregpod/Sites/wayfor/app/View/Profiles/new_profile.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/Users/gregpod/Sites/wayfor/app/View/Profiles/new_profile.ctp',
+)
+Request URL: /wayfor/profiles/new_profile
+Stack Trace:
+#0 /Users/gregpod/Sites/wayfor/lib/Cake/View/View.php(468): View->_getViewFileName(NULL)
+#1 /Users/gregpod/Sites/wayfor/lib/Cake/Controller/Controller.php(948): View->render(NULL, NULL)
+#2 /Users/gregpod/Sites/wayfor/lib/Cake/Routing/Dispatcher.php(194): Controller->render()
+#3 /Users/gregpod/Sites/wayfor/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(ProfilesController), Object(CakeRequest), Object(CakeResponse))
+#4 /Users/gregpod/Sites/wayfor/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-05-29 15:30:12 Error: [MissingControllerException] Controller class LoginController could not be found.
+Exception Attributes: array (
+  'class' => 'LoginController',
+  'plugin' => NULL,
+)
+Request URL: /wayfor/login
+Stack Trace:
+#0 /Users/gregpod/Sites/wayfor/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-05-29 15:31:01 Error: [MissingControllerException] Controller class LoginController could not be found.
+Exception Attributes: array (
+  'class' => 'LoginController',
+  'plugin' => NULL,
+)
+Request URL: /wayfor/login
+Stack Trace:
+#0 /Users/gregpod/Sites/wayfor/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-05-29 15:50:12 Error: Fatal Error (4): syntax error, unexpected 'var' (T_VAR) in [/Users/gregpod/Sites/wayfor/app/Controller/ProfilesController.php, line 12]
+2013-05-29 15:50:12 Error: [FatalErrorException] syntax error, unexpected 'var' (T_VAR)
+Request URL: /wayfor/profiles/new_profile
+Stack Trace:
+#0 /Users/gregpod/Sites/wayfor/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Users/gregpod/...', 12)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Users/gregpod/...', 12, Array)
+#2 /Users/gregpod/Sites/wayfor/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Users/gregpod/...', 12, Array)
+#3 /Users/gregpod/Sites/wayfor/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-05-29 16:03:35 Error: [MissingControllerException] Controller class ProfileController could not be found.
+Exception Attributes: array (
+  'class' => 'ProfileController',
+  'plugin' => NULL,
+)
+Request URL: /wayfor/profile/view/1
+Stack Trace:
+#0 /Users/gregpod/Sites/wayfor/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-05-29 16:04:00 Error: [MissingControllerException] Controller class ProfileController could not be found.
+Exception Attributes: array (
+  'class' => 'ProfileController',
+  'plugin' => NULL,
+)
+Request URL: /wayfor/profile/view/1
+Stack Trace:
+#0 /Users/gregpod/Sites/wayfor/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-05-29 16:19:31 Error: Fatal Error (4): syntax error, unexpected ''type'' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in [/Users/gregpod/Sites/wayfor/app/View/Profiles/view.ctp, line 10]
+2013-05-29 16:19:31 Error: [FatalErrorException] syntax error, unexpected ''type'' (T_CONSTANT_ENCAPSED_STRING), expecting ')'
+Request URL: /wayfor/profiles/view/1
+Stack Trace:
+#0 /Users/gregpod/Sites/wayfor/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Users/gregpod/...', 10)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Users/gregpod/...', 10, Array)
+#2 /Users/gregpod/Sites/wayfor/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Users/gregpod/...', 10, Array)
+#3 /Users/gregpod/Sites/wayfor/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-05-29 17:14:01 Error: Fatal Error (4): syntax error, unexpected 'if' (T_IF) in [/Users/gregpod/Sites/wayfor/app/Controller/UsersController.php, line 121]
+2013-05-29 17:14:01 Error: [FatalErrorException] syntax error, unexpected 'if' (T_IF)
+Request URL: /wayfor/users/logout
+Stack Trace:
+#0 /Users/gregpod/Sites/wayfor/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Users/gregpod/...', 121)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Users/gregpod/...', 121, Array)
+#2 /Users/gregpod/Sites/wayfor/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Users/gregpod/...', 121, Array)
+#3 /Users/gregpod/Sites/wayfor/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-05-29 17:14:44 Error: [MissingControllerException] Controller class DistrictsController could not be found.
+Exception Attributes: array (
+  'class' => 'DistrictsController',
+  'plugin' => NULL,
+)
+Request URL: /wayfor/districts/add/1
+Stack Trace:
+#0 /Users/gregpod/Sites/wayfor/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-07-23 15:45:22 Error: Fatal Error (4): syntax error, unexpected ',', expecting ']' in [/Users/gregpod/Sites/MAMP/wayfor/app/Controller/UsersController.php, line 111]
+2013-07-23 15:45:22 Error: [FatalErrorException] syntax error, unexpected ',', expecting ']'
+Request URL: /wayfor/users/login
+Stack Trace:
+#0 /Users/gregpod/Sites/MAMP/wayfor/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Users/gregpod/...', 111)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Users/gregpod/...', 111, Array)
+#2 /Users/gregpod/Sites/MAMP/wayfor/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Users/gregpod/...', 111, Array)
+#3 /Users/gregpod/Sites/MAMP/wayfor/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-07-23 15:54:30 Error: Fatal Error (1): Call to a member function flash() on a non-object in [/Users/gregpod/Sites/MAMP/wayfor/app/View/Layouts/default.ctp, line 73]
+2013-07-23 15:54:30 Error: [FatalErrorException] Call to a member function flash() on a non-object
+Request URL: /wayfor/users/login
+Stack Trace:
+#0 /Users/gregpod/Sites/MAMP/wayfor/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Users/gregpod/...', 73)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Users/gregpod/...', 73, Array)
+#2 /Users/gregpod/Sites/MAMP/wayfor/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Users/gregpod/...', 73, Array)
+#3 /Users/gregpod/Sites/MAMP/wayfor/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
